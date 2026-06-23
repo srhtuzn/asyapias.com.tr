@@ -1,4 +1,4 @@
-/* As İnşaat - Etkileşim ve Animasyon Modülü */
+/* AS Yapı - Etkileşim ve Animasyon Modülü */
 
 document.addEventListener("DOMContentLoaded", () => {
   initCustomCursor();

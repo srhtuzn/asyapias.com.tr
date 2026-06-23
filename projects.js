@@ -1,10 +1,10 @@
-// As İnşaat - Proje Veritabanı ve Yönetim Modülü
+// AS Yapı - Proje Veritabanı ve Yönetim Modülü
 // Yeni proje eklemek için bu dosyayı düzenleyebilir veya tarayıcıda ?admin=true parametresiyle görsel aracı kullanabilirsiniz.
 
 const PROJECTS_DATA = [
   {
     id: "as-bosphorus-villas",
-    title: "As Bosphorus Konakları",
+    title: "AS Bosphorus Konakları",
     category: "residential",
     categoryTitle: "Konut Projesi",
     location: "Sarıyer, İstanbul",
@@ -27,7 +27,7 @@ const PROJECTS_DATA = [
   },
   {
     id: "as-marina-plaza",
-    title: "As Marina Plaza",
+    title: "AS Marina Plaza",
     category: "commercial",
     categoryTitle: "Ticari Proje",
     location: "Kartal, İstanbul",
@@ -50,7 +50,7 @@ const PROJECTS_DATA = [
   },
   {
     id: "as-galata-loft",
-    title: "As Galata Loft",
+    title: "AS Galata Loft",
     category: "interior",
     categoryTitle: "İç Mimari & Tasarım",
     location: "Beyoğlu, İstanbul",
@@ -73,7 +73,7 @@ const PROJECTS_DATA = [
   },
   {
     id: "as-tower",
-    title: "As Tower Rezidans",
+    title: "AS Tower Rezidans",
     category: "residential",
     categoryTitle: "Konut Projesi",
     location: "Çankaya, Ankara",
@@ -96,7 +96,7 @@ const PROJECTS_DATA = [
   },
   {
     id: "as-elite-villas",
-    title: "As Elite Villaları",
+    title: "AS Elite Villaları",
     category: "residential",
     categoryTitle: "Konut Projesi",
     location: "Gölbaşı, Ankara",
@@ -119,7 +119,7 @@ const PROJECTS_DATA = [
   },
   {
     id: "as-vadisi-villas",
-    title: "As Vadisi Konutları",
+    title: "AS Vadisi Konutları",
     category: "residential",
     categoryTitle: "Konut Projesi",
     location: "Çankaya, Ankara",
@@ -142,7 +142,7 @@ const PROJECTS_DATA = [
   },
   {
     id: "as-gokturk-houses",
-    title: "As Göktürk Orman Evleri",
+    title: "AS Göktürk Orman Evleri",
     category: "residential",
     categoryTitle: "Konut Projesi",
     location: "Göktürk, İstanbul",
@@ -165,7 +165,7 @@ const PROJECTS_DATA = [
   },
   {
     id: "as-modular-maslak",
-    title: "As Modüler Maslak",
+    title: "AS Modüler Maslak",
     category: "commercial",
     categoryTitle: "Ticari Proje",
     location: "Maslak, İstanbul",
@@ -188,7 +188,7 @@ const PROJECTS_DATA = [
   },
   {
     id: "as-kadikoy-office",
-    title: "As Kadıköy Kreatif Ofis",
+    title: "AS Kadıköy Kreatif Ofis",
     category: "interior",
     categoryTitle: "İç Mimari & Tasarım",
     location: "Kadıköy, İstanbul",
@@ -426,7 +426,7 @@ function initAdminPanel() {
       
       <div class="admin-form-group">
         <label class="admin-label">Proje Başlığı</label>
-        <input type="text" class="admin-input" id="projTitle" placeholder="Örn: As Hill Villaları">
+        <input type="text" class="admin-input" id="projTitle" placeholder="Örn: AS Hill Villaları">
       </div>
 
       <div class="admin-form-row">
