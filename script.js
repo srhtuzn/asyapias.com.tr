@@ -73,7 +73,7 @@ function initMobileMenu() {
   });
 }
 
-// 3. GSAP KAYDIRMA VE KATMAN PARÇALANMA ANİMASYONU (HERO 3D DECONSTRUCTION)
+// 3. GSAP KAYDIRMA VE KATMAN PARÇALANMA ANİMASYONU (HERO FULL-PAGE SPLIT PEELING)
 function initScrollAnimations() {
   // Eğer GSAP yüklenmediyse düzgün çalışması için fallback
   if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") {
@@ -84,126 +84,120 @@ function initScrollAnimations() {
 
   gsap.registerPlugin(ScrollTrigger);
 
-  // 1. Giriş Animasyonu (Görsel wow efekti - Yükleme tamamlanınca katmanlar birleşir)
-  gsap.set(".layer-blueprint", { z: -350, y: -150, opacity: 0 });
-  gsap.set(".layer-structure", { z: -100, rotateY: 45, opacity: 0 });
-  gsap.set(".layer-facade", { z: 350, y: 150, opacity: 0 });
+  // 1. Giriş Animasyonu (Görsel yüklenince katmanlar birleşir)
+  gsap.set(".facade-left", { xPercent: -100 });
+  gsap.set(".facade-right", { xPercent: 100 });
+  gsap.set(".structure-top", { yPercent: -100 });
+  gsap.set(".structure-bottom", { yPercent: 100 });
   gsap.set(".hero-content > *", { opacity: 0, y: 30 });
 
-  // Animasyonu başlat
+  // Sayfa yüklendiğinde katmanlar pürüzsüzce birleşir
   const startTl = gsap.timeline({ delay: 0.3 });
-  startTl.to(".layer-blueprint", { z: 0, y: 0, opacity: 1, duration: 1.4, ease: "power2.out" })
-         .to(".layer-structure", { z: 0, rotateY: 0, opacity: 0.8, duration: 1.6, ease: "power2.out" }, "-=1.0")
-         .to(".layer-facade", { z: 0, y: 0, opacity: 1, duration: 1.8, ease: "power2.out" }, "-=1.2")
-         .to(".hero-content > *", { opacity: 1, y: 0, duration: 1.0, stagger: 0.2, ease: "power3.out" }, "-=1.4");
+  startTl.to(".structure-top", { yPercent: 0, duration: 1.2, ease: "power3.out" })
+         .to(".structure-bottom", { yPercent: 0, duration: 1.2, ease: "power3.out" }, "-=1.2")
+         .to(".facade-left", { xPercent: 0, duration: 1.4, ease: "power3.out" }, "-=0.8")
+         .to(".facade-right", { xPercent: 0, duration: 1.4, ease: "power3.out" }, "-=1.4")
+         .to(".hero-content > *", { opacity: 1, y: 0, duration: 1.0, stagger: 0.2, ease: "power3.out" }, "-=0.8");
 
-  // Fare hareketine göre 3D kutuyu hafifçe döndürme etkisi (Paralaks)
-  const viewport = document.getElementById("hero3dViewport");
-  const container = document.getElementById("hero3dContainer");
-
-  if (viewport && container) {
-    viewport.addEventListener("mousemove", (e) => {
-      const rect = viewport.getBoundingClientRect();
-      const x = e.clientX - rect.left - rect.width / 2;
-      const y = e.clientY - rect.top - rect.height / 2;
-      
-      // Kaydırma animasyonunu ezmemek için GSAP quickTo kullanıyoruz
-      gsap.to(container, {
-        rotateY: -25 + (x / rect.width) * 15,
-        rotateX: 20 - (y / rect.height) * 15,
-        duration: 0.6,
-        ease: "power2.out"
-      });
-    });
-
-    viewport.addEventListener("mouseleave", () => {
-      gsap.to(container, {
-        rotateY: -25,
-        rotateX: 20,
-        duration: 1.2,
-        ease: "power2.out"
-      });
-    });
-  }
-
-  // 3D Bina Katmanlarının Kaydırma Tetikleyici ile Sabitlenerek (Pin) Parçalanması
+  // Katmanların Sırasıyla Ayrılması / Sayfa Kaydırıldıkça Yüzeylerin Soyulması
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".hero-section",
       start: "top top",
-      end: "+=120%", // Kaydırma miktarı ekran yüksekliğinin 1.2 katı boyunca sayfayı sabitleyecek
-      scrub: 1.2, // Pürüzsüz damping kaydırma tepkisi
+      end: "+=200%", // Uzatılmış kaydırma mesafesi
+      scrub: 1.5, // Damping tepkisi
       pin: true, // Bölümü sabitler
       anticipatePin: 1
     }
   });
 
-  // Katmanları 3D uzayda birbirinden ayırma ve yarı saydamlık verme
-  tl.to(".layer-facade", {
-    z: 220, // Öne fırlama mesafesi
-    y: 100, // Aşağı kayma
-    x: -50, // Sola kayma
-    opacity: 0.25, // İç detayları gösterebilmek için transparanlaşma
-    duration: 1
+  // AŞAMA 1: Bitmiş Cephe (Facade) Ortadan İkiye Ayrılarak Sola ve Sağa Kayar
+  tl.to(".facade-left", {
+    xPercent: -102, // Ufak bir boşluk kalmaması için -102%
+    ease: "power1.inOut"
   }, 0)
-  .to(".layer-structure", {
-    z: 10,
-    y: 0,
-    x: 0,
-    rotateY: -20, // Çelik karkası döndürerek detay gösterme
-    opacity: 0.9,
-    duration: 1
+  .to(".facade-right", {
+    xPercent: 102,
+    ease: "power1.inOut"
   }, 0)
-  .to(".layer-blueprint", {
-    z: -220, // Arkaya itilme
-    y: -100, // Yukarı kayma
-    x: 50, // Sağa kayma
-    opacity: 0.6,
-    duration: 1
-  }, 0)
-  // Etiketlerin (Technical Labels) katmanlar açıldıkça sırayla belirmesi
-  .to(".label-blueprint", {
+  .to(".label-facade-screen", {
     opacity: 1,
-    left: "-10px",
+    scale: 1.05,
     duration: 0.3
-  }, 0.2)
-  .to(".label-structure", {
-    opacity: 1,
-    right: "-10px",
-    duration: 0.3
+  }, 0)
+  .to(".label-facade-screen", {
+    opacity: 0,
+    duration: 0.2
+  }, 0.4);
+
+  // AŞAMA 2: Çelik/Betonarme Karkas Yapı (Structure) Yatayda Ayrılarak Yukarı ve Aşağı Kayar
+  tl.to(".structure-top", {
+    yPercent: -102,
+    ease: "power1.inOut"
   }, 0.5)
-  .to(".label-facade", {
+  .to(".structure-bottom", {
+    yPercent: 102,
+    ease: "power1.inOut"
+  }, 0.5)
+  .to(".label-structure-screen", {
     opacity: 1,
-    left: "10px",
+    scale: 1.05,
     duration: 0.3
-  }, 0.7);
+  }, 0.4)
+  .to(".label-structure-screen", {
+    opacity: 0,
+    duration: 0.2
+  }, 0.8);
+
+  // AŞAMA 3: En Alttaki Blueprint (Çizim & Hesap) Katmanı Ortaya Çıkar
+  tl.to(".label-blueprint-screen", {
+    opacity: 1,
+    scale: 1.05,
+    duration: 0.3
+  }, 0.8);
 }
 
 // GSAP Yüklenemezse Çalışacak Scroll Fallback (Pure JS)
 function initScrollFallback() {
-  const facade = document.querySelector(".layer-facade");
-  const structure = document.querySelector(".layer-structure");
-  const blueprint = document.querySelector(".layer-blueprint");
+  const facadeLeft = document.querySelector(".facade-left");
+  const facadeRight = document.querySelector(".facade-right");
+  const structTop = document.querySelector(".structure-top");
+  const structBottom = document.querySelector(".structure-bottom");
   
-  const labelBlue = document.querySelector(".label-blueprint");
-  const labelStruct = document.querySelector(".label-structure");
-  const labelFacade = document.querySelector(".label-facade");
+  const labelBlue = document.querySelector(".label-blueprint-screen");
+  const labelStruct = document.querySelector(".label-structure-screen");
+  const labelFacade = document.querySelector(".label-facade-screen");
+
+  // Reset initial load state in fallback
+  if (facadeLeft) facadeLeft.style.transform = "translateX(0)";
+  if (facadeRight) facadeRight.style.transform = "translateX(0)";
+  if (structTop) structTop.style.transform = "translateY(0)";
+  if (structBottom) structBottom.style.transform = "translateY(0)";
 
   window.addEventListener("scroll", () => {
     const scrollY = window.scrollY;
     const maxScroll = window.innerHeight;
     const progress = Math.min(scrollY / maxScroll, 1);
 
-    if (facade && structure && blueprint) {
-      facade.style.transform = `translateZ(${progress * 180}px) translateY(${progress * 80}px) translateX(${progress * -30}px)`;
-      structure.style.transform = `translateZ(0px) rotateY(${progress * -10}deg)`;
-      blueprint.style.transform = `translateZ(${progress * -180}px) translateY(${progress * -80}px) translateX(${progress * 30}px)`;
-    }
+    // Phase 1 (0 to 50% scroll): Facade peels left & right
+    const phase1Progress = Math.min(progress * 2, 1);
+    if (facadeLeft) facadeLeft.style.transform = `translateX(-${phase1Progress * 50}vw)`;
+    if (facadeRight) facadeRight.style.transform = `translateX(${phase1Progress * 50}vw)`;
+    if (labelFacade) labelFacade.style.opacity = phase1Progress < 0.8 ? 1 : 0;
 
-    // Etiketlerin opaklık kontrolü
-    if (labelBlue) labelBlue.style.opacity = progress > 0.15 ? 1 : 0;
-    if (labelStruct) labelStruct.style.opacity = progress > 0.45 ? 1 : 0;
-    if (labelFacade) labelFacade.style.opacity = progress > 0.7 ? 1 : 0;
+    // Phase 2 (50% to 100% scroll): Structure peels top & bottom
+    if (progress > 0.5) {
+      const phase2Progress = Math.min((progress - 0.5) * 2, 1);
+      if (structTop) structTop.style.transform = `translateY(-${phase2Progress * 50}vh)`;
+      if (structBottom) structBottom.style.transform = `translateY(${phase2Progress * 50}vh)`;
+      if (labelStruct) labelStruct.style.opacity = phase2Progress < 0.8 ? 1 : 0;
+      if (labelBlue) labelBlue.style.opacity = phase2Progress > 0.5 ? 1 : 0;
+    } else {
+      if (structTop) structTop.style.transform = "translateY(0)";
+      if (structBottom) structBottom.style.transform = "translateY(0)";
+      if (labelStruct) labelStruct.style.opacity = progress > 0.3 ? 1 : 0;
+      if (labelBlue) labelBlue.style.opacity = 0;
+    }
   });
 }
 
