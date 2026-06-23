@@ -806,6 +806,8 @@ header.glass-header.compact .logo-img {
 .contact-icon { color: var(--gold); font-size: 1.35rem; margin-top: 2px; }
 .contact-text h4 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-2); margin-bottom: 4px; font-family: var(--font-heading); }
 .contact-text p { color: var(--text-0); font-size: 1rem; font-weight: 500; }
+.contact-text p a { color: var(--text-0); text-decoration: none; transition: color 0.3s var(--ease-custom); }
+.contact-text p a:hover { color: var(--gold); }
 
 .contact-form {
   background: var(--surface-card);
