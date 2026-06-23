@@ -5,12 +5,16 @@ const PROJECTS_DATA = [
   {
     id: "as-bosphorus-villas",
     title: "AS Bosphorus Konakları",
+    titleEn: "AS Bosphorus Villas",
     category: "residential",
     categoryTitle: "Konut Projesi",
+    categoryTitleEn: "Residential Project",
     location: "Sarıyer, İstanbul",
+    locationEn: "Sariyer, Istanbul",
     year: "2025",
     area: "18.500 m²",
     description: "İstanbul Boğazı'nın nefes kesen manzarasına hakim, modern mimari çizgileri ile tarihi yalı estetiğini harmanlayan ultra lüks konut projesi. Doğal taş, yapısal çelik ve lamine ahşap detayların eşsiz uyumu.",
+    descriptionEn: "An ultra-luxury residential project overlooking the breathtaking view of the Bosphorus, blending modern architectural lines with historical mansion aesthetics. A unique harmony of natural stone, structural steel, and laminated wood details.",
     mainImage: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80",
     images: [
       "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
@@ -23,17 +27,28 @@ const PROJECTS_DATA = [
       "Doğal Taş ve Tik Ağacı Cephe Detayları",
       "Özel Yat İskelesi ve Helikopter Pisti",
       "LEED Gold Sertifikalı Çevre Dostu Tasarım"
+    ],
+    featuresEn: [
+      "Private Infinity Pool with Bosphorus View",
+      "Smart Climate Control & Security Infrastructure",
+      "Natural Stone & Teak Wood Facade Details",
+      "Private Yacht Pier and Helipad",
+      "LEED Gold Certified Eco-Friendly Design"
     ]
   },
   {
     id: "as-marina-plaza",
     title: "AS Marina Plaza",
+    titleEn: "AS Marina Plaza",
     category: "commercial",
     categoryTitle: "Ticari Proje",
+    categoryTitleEn: "Commercial Project",
     location: "Kartal, İstanbul",
+    locationEn: "Kartal, Istanbul",
     year: "2026",
     area: "65.000 m²",
     description: "Marmara Denizi ve Adalar manzarasına karşı konumlanmış, kendi yat marinasına sahip A+ sınıfı ticari ofis ve yaşam merkezi projesi. Yenilikçi ve aerodinamik kule tasarımıyla iş dünyasının yeni prestij merkezi.",
+    descriptionEn: "An A+ class commercial office and life center project located opposite the Marmara Sea and Princes' Islands, featuring its own private yacht marina. The new prestige center of the business world with its innovative and aerodynamic tower design.",
     mainImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
     images: [
       "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
@@ -46,17 +61,28 @@ const PROJECTS_DATA = [
       "Double-skin Akustik ve Akıllı Cephe Sistemi",
       "LEED Platinum Sertifika Adaylığı",
       "Yüksek Hızlı Akıllı Asansörler (10m/s)"
+    ],
+    featuresEn: [
+      "Modular Workspaces with Sea View",
+      "Helipad & Marina Access Dock",
+      "Double-skin Acoustic & Smart Facade System",
+      "LEED Platinum Certificate Candidate",
+      "High-Speed Smart Elevators (10m/s)"
     ]
   },
   {
     id: "as-galata-loft",
     title: "AS Galata Loft",
+    titleEn: "AS Galata Loft",
     category: "interior",
     categoryTitle: "İç Mimari & Tasarım",
+    categoryTitleEn: "Interior Architecture & Design",
     location: "Beyoğlu, İstanbul",
+    locationEn: "Beyoglu, Istanbul",
     year: "2024",
     area: "340 m²",
     description: "Tarihi Galata bölgesinde yer alan, 19. yüzyıldan kalma tescilli bir taş binanın endüstriyel minimalist tarzda restore edilerek loft daireye dönüştürülmesi projesi. Tarihi tuğla duvarların modern metal strüktürlerle uyumu.",
+    descriptionEn: "A restoration and loft conversion project of a registered 19th-century stone building in the historic Galata district, designed in an industrial minimalist style. An outstanding harmony of historic brick walls with modern metal structures.",
     mainImage: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
     images: [
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
@@ -69,17 +95,28 @@ const PROJECTS_DATA = [
       "Yüksek Tavanlı Akustik Aydınlatma Çözümleri",
       "Gizli Ev Sinema ve Ses Altyapısı",
       "El Yapımı İtalyan Mutfak Tasarımı"
+    ],
+    featuresEn: [
+      "Historic Brick & Horasan Mortar Restoration",
+      "Exposed Concrete & Black Steel Structures",
+      "Acoustic Lighting Solutions with High Ceilings",
+      "Concealed Home Theater & Sound Infrastructure",
+      "Handmade Italian Kitchen Design"
     ]
   },
   {
     id: "as-tower",
     title: "AS Tower Rezidans",
+    titleEn: "AS Tower Residence",
     category: "residential",
     categoryTitle: "Konut Projesi",
+    categoryTitleEn: "Residential Project",
     location: "Çankaya, Ankara",
+    locationEn: "Cankaya, Ankara",
     year: "2025",
     area: "45.000 m²",
     description: "Modern mimari çizgileri, çevreci teknolojileri ve lüks sosyal donatıları bir araya getiren 32 katlı prestijli rezidans projesi. Akıllı ev sistemleri ve panoramik şehir manzarasıyla standartların ötesinde bir yaşam sunmaktadır.",
+    descriptionEn: "A 32-story prestigious residence project that combines modern architectural lines, eco-friendly technologies, and luxury social facilities. It offers a life beyond standards with smart home systems and panoramic city views.",
     mainImage: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
     images: [
       "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
@@ -92,17 +129,28 @@ const PROJECTS_DATA = [
       "Kapalı Otopark ve Elektrikli Araç Şarj İstasyonları",
       "Açık/Kapalı Yüzme Havuzu ve Wellness Center",
       "Kendi Enerjisini Üreten Akıllı Cephe Sistemi"
+    ],
+    featuresEn: [
+      "A+ Energy Class Sustainable Structure",
+      "24/7 Smart Security Systems",
+      "Indoor Parking & Electric Vehicle Charging Stations",
+      "Indoor/Outdoor Swimming Pool & Wellness Center",
+      "Self-Powering Smart Facade System"
     ]
   },
   {
     id: "as-elite-villas",
     title: "AS Elite Villaları",
+    titleEn: "AS Elite Villas",
     category: "residential",
     categoryTitle: "Konut Projesi",
+    categoryTitleEn: "Residential Project",
     location: "Gölbaşı, Ankara",
+    locationEn: "Golbasi, Ankara",
     year: "2024",
     area: "12.500 m²",
     description: "Doğayla iç içe, müstakil havuzlu ve geniş bahçeli 12 adet ultra lüks akıllı villa projesi. Doğal taş ve ahşap detaylarla bezeli mimarisiyle, doğallığı ve konforu bir arada sunan özel bir yaşam alanı.",
+    descriptionEn: "An exclusive life space of 12 ultra-luxury smart villas integrated with nature, featuring private pools and large gardens. Blending natural stone and wood details, it offers comfort and natural beauty in perfect harmony.",
     mainImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
     images: [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
@@ -115,17 +163,28 @@ const PROJECTS_DATA = [
       "Isı Pompalı ve Çevre Dostu İklimlendirme",
       "Özel Sinema ve Fitness Odası",
       "Lamine Parke ve İthal Seramik Kaplamalar"
+    ],
+    featuresEn: [
+      "350 m² Private Garden and Pool",
+      "Underfloor Heating & VRF Cooling Systems",
+      "Heat Pump & Eco-Friendly Climate Control",
+      "Private Cinema & Fitness Room",
+      "Laminated Parquet & Imported Ceramic Finishes"
     ]
   },
   {
     id: "as-vadisi-villas",
     title: "AS Vadisi Konutları",
+    titleEn: "AS Valley Residences",
     category: "residential",
     categoryTitle: "Konut Projesi",
+    categoryTitleEn: "Residential Project",
     location: "Çankaya, Ankara",
+    locationEn: "Cankaya, Ankara",
     year: "2025",
     area: "35.000 m²",
     description: "Ankara'nın vadi manzarasına hakim, sürdürülebilir mimarinin ön planda olduğu, geniş yeşil alanlara ve güneş paneli kiremitlerine sahip yeni nesil lüks daire kompleksi projesi.",
+    descriptionEn: "A new generation luxury apartment complex project dominating Ankara's valley view, emphasizing sustainable architecture, featuring large green areas and solar panel roof tiles.",
     mainImage: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
     images: [
       "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80",
@@ -138,17 +197,28 @@ const PROJECTS_DATA = [
       "Gri Su Arıtma ve Geri Kazanım Altyapısı",
       "Dikey Orman Bitkilendirmeli Kat Balkonları",
       "7/24 Kesintisiz Güç ve Jeneratör Yedeklemesi"
+    ],
+    featuresEn: [
+      "Photovoltaic Solar Roof Tiles",
+      "Jogging & Recreation Track with Valley View",
+      "Grey Water Filtration & Recycling Infrastructure",
+      "Vertical Forest Planted Balconies",
+      "24/7 Uninterrupted Power & Generator Backup"
     ]
   },
   {
     id: "as-gokturk-houses",
     title: "AS Göktürk Orman Evleri",
+    titleEn: "AS Gokturk Forest Houses",
     category: "residential",
     categoryTitle: "Konut Projesi",
+    categoryTitleEn: "Residential Project",
     location: "Göktürk, İstanbul",
+    locationEn: "Gokturk, Istanbul",
     year: "2026",
     area: "9.200 m²",
     description: "Belgrad Ormanı sınırında, doğanın kalbinde konumlandırılmış, brüt beton, masif ahşap ve temperli cam cepheli 8 adet ultra lüks müstakil orman evi projesi.",
+    descriptionEn: "Located at the edge of the Belgrad Forest, in the heart of nature, 8 ultra-luxury detached forest villas featuring exposed concrete, solid wood, and tempered glass facades.",
     mainImage: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
     images: [
       "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=800&q=80",
@@ -161,17 +231,28 @@ const PROJECTS_DATA = [
       "Jeotermal Isı Pompası ile Düşük Enerji Tüketimi",
       "Müstakil Isıtmalı Havuz ve Geniş Deck Teraslar",
       "Özel Güvenlik ve Çevre Çit Koruma Sistemleri"
+    ],
+    featuresEn: [
+      "Solid Wood and Natural Stone Facade Claddings",
+      "Smart Rainwater Harvesting & Garden Irrigation",
+      "Low Energy Consumption with Geothermal Heat Pump",
+      "Private Heated Pool and Large Deck Terraces",
+      "Private Security and Perimeter Fence Systems"
     ]
   },
   {
     id: "as-modular-maslak",
     title: "AS Modüler Maslak",
+    titleEn: "AS Modular Maslak",
     category: "commercial",
     categoryTitle: "Ticari Proje",
+    categoryTitleEn: "Commercial Project",
     location: "Maslak, İstanbul",
+    locationEn: "Maslak, Istanbul",
     year: "2026",
     area: "42.000 m²",
     description: "Maslak finans bölgesinde yükselen, esnek ve modüler kat planlarına sahip, HEPA filtreli taze hava iklimlendirmeli ve akıllı cam cepheli yeni nesil yeşil ofis kulesi projesi.",
+    descriptionEn: "A new generation green office tower rising in the Maslak financial district, featuring flexible and modular floor plans, HEPA-filtered fresh air ventilation, and smart glass facades.",
     mainImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
     images: [
       "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
@@ -184,17 +265,28 @@ const PROJECTS_DATA = [
       "Kat Terasları ve Sosyal Ortak Alanlar",
       "HEPA Filtreli Havalandırma (HVAC)",
       "Bina Yönetim Otomasyonu (BMS)"
+    ],
+    featuresEn: [
+      "Connectable and Modular Office Spaces",
+      "Solar Heat-Reflecting Smart Glass Curtain Wall",
+      "Floor Terraces and Social Common Areas",
+      "HEPA Filtered Ventilation (HVAC)",
+      "Building Management Automation (BMS)"
     ]
   },
   {
     id: "as-kadikoy-office",
     title: "AS Kadıköy Kreatif Ofis",
+    titleEn: "AS Kadikoy Creative Office",
     category: "interior",
     categoryTitle: "İç Mimari & Tasarım",
+    categoryTitleEn: "Interior Architecture & Design",
     location: "Kadıköy, İstanbul",
+    locationEn: "Kadikoy, Istanbul",
     year: "2025",
     area: "480 m²",
     description: "Kadıköy'de eski bir antreponun, yüksek tavanlı, brüt beton zeminli, açık çalışma alanları ve ses yalıtımlı toplantı kapsülleri sunan modern bir kreatif ajans ofisine dönüştürülmesi projesi.",
+    descriptionEn: "A restoration project of an old warehouse in Kadikoy into a modern creative agency office, offering high ceilings, exposed concrete floors, open workspaces, and soundproof meeting capsules.",
     mainImage: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80",
     images: [
       "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80",
@@ -207,6 +299,13 @@ const PROJECTS_DATA = [
       "Gizli Kablolama ve Zemin Kanal Sistemleri",
       "Kişiselleştirilebilir Dimlenebilir Aydınlatma",
       "Minimalist Endüstriyel Mobilya Tasarımları"
+    ],
+    featuresEn: [
+      "High Ceilings & Custom Acoustic Panel Hangers",
+      "Soundproof Mobile Meeting Capsules",
+      "Concealed Cabling & Floor Duct Systems",
+      "Customizable Dimmable Lighting",
+      "Minimalist Industrial Furniture Designs"
     ]
   }
 ];

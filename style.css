@@ -378,6 +378,8 @@ header.glass-header .nav-container {
   width: 100%;
   height: 100%;
   z-index: 1;
+  perspective: 1500px;
+  transform-style: preserve-3d;
 }
 
 .hero-bg-layer {
@@ -389,6 +391,7 @@ header.glass-header .nav-container {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  transform-style: preserve-3d;
 }
 
 /* Layer 1: Blueprint */
@@ -422,8 +425,9 @@ header.glass-header .nav-container {
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
-  transition: transform 0.1s ease-out;
   filter: brightness(0.35) contrast(1.1);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
 }
 .structure-top {
   top: 0;
@@ -431,12 +435,14 @@ header.glass-header .nav-container {
   background-position: center top;
   background-size: 100vw 100vh;
   border-bottom: 1px dashed rgba(212, 175, 55, 0.25);
+  transform-origin: center top;
 }
 .structure-bottom {
   bottom: 0;
   background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2000&q=80');
   background-position: center bottom;
   background-size: 100vw 100vh;
+  transform-origin: center bottom;
 }
 
 /* Layer 3: Completed Facade (Splits Left/Right) */
@@ -452,7 +458,8 @@ header.glass-header .nav-container {
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
-  transition: transform 0.1s ease-out;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
 }
 .facade-left {
   left: 0;
@@ -460,12 +467,14 @@ header.glass-header .nav-container {
   background-position: left center;
   background-size: 100vw 100vh;
   border-right: 1px solid rgba(212, 175, 55, 0.35);
+  transform-origin: left center;
 }
 .facade-right {
   right: 0;
   background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80');
   background-position: right center;
   background-size: 100vw 100vh;
+  transform-origin: right center;
 }
 
 /* Dark Vignette Overlay for perfect readability */
@@ -1342,4 +1351,70 @@ footer {
 .timeline-desc {
   font-size: 0.9rem;
   color: var(--text-muted);
+}
+
+/* Lenis Smooth Scroll Integration */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overflow: clip;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Premium Text Reveal Animation */
+.reveal-wrapper {
+  display: block;
+  overflow: hidden;
+  line-height: 1.15;
+  margin-bottom: 0.25rem;
+}
+.reveal-inner {
+  display: inline-block;
+  transform: translateY(105%);
+}
+.reveal-inner.highlight {
+  color: var(--primary);
+}
+
+/* Language Selector Styles */
+.lang-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 600;
+  z-index: 100;
+  margin-left: 1.5rem;
+}
+.lang-btn {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.lang-btn:hover, .lang-btn.active {
+  color: var(--primary);
+}
+.lang-divider {
+  color: rgba(255, 255, 255, 0.15);
+  font-weight: 300;
+}
+
+@media (max-width: 767px) {
+  .lang-selector {
+    margin-left: auto;
+    margin-right: 1.5rem;
+  }
 }

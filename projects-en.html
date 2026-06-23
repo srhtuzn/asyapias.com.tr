@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Projects | AS Yapı - Completed & Ongoing Projects</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="AS Yapı's completed and ongoing prestigious residential, villa, business center, and interior architecture projects. Review project details and features.">
+  <meta name="keywords" content="construction projects, residence projects, luxury villa construction, ankara housing projects, commercial plazas">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="AS Yapı">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect x=%2225%22 y=%2225%22 width=%2250%22 height=%2250%22 fill=%22none%22 stroke=%22%23d4af37%22 stroke-width=%228%22 rotate=%2245%22/></svg>">
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+  <!-- Background Grid Lines -->
+  <div class="bg-grid-lines"></div>
+
+  <!-- Glass Header -->
+  <header class="glass-header">
+    <div class="container nav-container">
+      <a href="index-en.html" class="logo">
+        <span class="logo-icon"></span>
+        AS<span>YAPI</span>
+      </a>
+      
+      <nav class="nav-menu">
+         <a href="index-en.html" class="nav-item">Home</a>
+         <a href="about-en.html" class="nav-item">Corporate</a>
+         <a href="projects-en.html" class="nav-item active">Projects</a>
+         <a href="contact-en.html" class="nav-item">Contact</a>
+      </nav>
+
+      <div class="lang-selector">
+        <a href="projects.html" class="lang-btn">TR 🇹🇷</a>
+        <span class="lang-divider">|</span>
+        <a href="projects-en.html" class="lang-btn active">EN 🇬🇧</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index-en.html" class="nav-item">Home</a>
+    <a href="about-en.html" class="nav-item">Corporate</a>
+    <a href="projects-en.html" class="nav-item active">Projects</a>
+    <a href="contact-en.html" class="nav-item">Contact</a>
+  </div>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-badge">Our Portfolio</span>
+        <h1 class="page-hero-title">Works We Built</h1>
+      </div>
+    </section>
+
+    <!-- Projects Portfolio Section -->
+    <section class="page-content-sec">
+      <div class="container">
+        
+        <!-- Filters Header row -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3.5rem; flex-wrap: wrap; gap: 1.5rem;">
+          <div>
+            <h2 class="section-title" style="margin-bottom: 0.5rem; font-size: 2rem;">All Our Projects</h2>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">You can access the details of our projects by filtering them by categories.</p>
+          </div>
+          
+          <div class="project-filters" style="margin-top: 0;">
+            <button class="filter-btn active" data-filter="all">ALL</button>
+            <button class="filter-btn" data-filter="residential">RESIDENTIAL</button>
+            <button class="filter-btn" data-filter="commercial">COMMERCIAL</button>
+            <button class="filter-btn" data-filter="interior">INTERIOR</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Grid list of projects -->
+        <div class="projects-grid" id="projectsGrid"></div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index-en.html" class="logo">
+          <span class="logo-icon"></span>
+          AS<span>YAPI</span>
+        </a>
+        <p>With our vision pushing the boundaries of engineering, we build the world of the future by constructing safe and luxury projects.</p>
+      </div>
+      
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index-en.html" class="footer-link">Home</a></li>
+          <li><a href="about-en.html" class="footer-link">Corporate</a></li>
+          <li><a href="projects-en.html" class="footer-link">Projects</a></li>
+          <li><a href="contact-en.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Services</h4>
+        <ul class="footer-links">
+          <li><a href="index-en.html#hizmetler" class="footer-link">Luxury Residential Construction</a></li>
+          <li><a href="index-en.html#hizmetler" class="footer-link">Steel Construction</a></li>
+          <li><a href="index-en.html#hizmetler" class="footer-link">Architectural Projects</a></li>
+          <li><a href="index-en.html#hizmetler" class="footer-link">Urban Transformation</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Newsletter</h4>
+        <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">Sign up for our newsletter to be informed about our projects and developments.</p>
+        <div style="display: flex; gap: 8px;">
+          <input type="email" class="form-input" placeholder="Your email address" style="padding: 10px 14px; font-size: 0.85rem;">
+          <button class="btn btn-primary" style="padding: 10px 16px; font-size: 0.8rem; border-radius: 6px;">SUBSCRIBE</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="copyright">&copy; 2026 AS YAPI A.Ş. All Rights Reserved.</div>
+      <div class="footer-socials">
+        <a href="#" class="social-icon" aria-label="Instagram">📸</a>
+        <a href="#" class="social-icon" aria-label="LinkedIn">💼</a>
+        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP Core, ScrollTrigger and Lenis from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+
+  <!-- Project Database & Script files -->
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
