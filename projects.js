@@ -3,6 +3,75 @@
 
 const PROJECTS_DATA = [
   {
+    id: "as-bosphorus-villas",
+    title: "As Bosphorus Konakları",
+    category: "residential",
+    categoryTitle: "Konut Projesi",
+    location: "Sarıyer, İstanbul",
+    year: "2025",
+    area: "18.500 m²",
+    description: "İstanbul Boğazı'nın nefes kesen manzarasına hakim, modern mimari çizgileri ile tarihi yalı estetiğini harmanlayan ultra lüks konut projesi. Doğal taş, yapısal çelik ve lamine ahşap detayların eşsiz uyumu.",
+    mainImage: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&w=800&q=80"
+    ],
+    features: [
+      "Boğaz Manzaralı Özel Infinity Havuz",
+      "Akıllı İklimlendirme ve Güvenlik Altyapısı",
+      "Doğal Taş ve Tik Ağacı Cephe Detayları",
+      "Özel Yat İskelesi ve Helikopter Pisti",
+      "LEED Gold Sertifikalı Çevre Dostu Tasarım"
+    ]
+  },
+  {
+    id: "as-marina-plaza",
+    title: "As Marina Plaza",
+    category: "commercial",
+    categoryTitle: "Ticari Proje",
+    location: "Kartal, İstanbul",
+    year: "2026",
+    area: "65.000 m²",
+    description: "Marmara Denizi ve Adalar manzarasına karşı konumlanmış, kendi yat marinasına sahip A+ sınıfı ticari ofis ve yaşam merkezi projesi. Yenilikçi ve aerodinamik kule tasarımıyla iş dünyasının yeni prestij merkezi.",
+    mainImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80"
+    ],
+    features: [
+      "Deniz Manzaralı Modüler Çalışma Alanları",
+      "Helikopter Pisti ve Marina Erişim İskelesi",
+      "Double-skin Akustik ve Akıllı Cephe Sistemi",
+      "LEED Platinum Sertifika Adaylığı",
+      "Yüksek Hızlı Akıllı Asansörler (10m/s)"
+    ]
+  },
+  {
+    id: "as-galata-loft",
+    title: "As Galata Loft",
+    category: "interior",
+    categoryTitle: "İç Mimari & Tasarım",
+    location: "Beyoğlu, İstanbul",
+    year: "2024",
+    area: "340 m²",
+    description: "Tarihi Galata bölgesinde yer alan, 19. yüzyıldan kalma tescilli bir taş binanın endüstriyel minimalist tarzda restore edilerek loft daireye dönüştürülmesi projesi. Tarihi tuğla duvarların modern metal strüktürlerle uyumu.",
+    mainImage: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80"
+    ],
+    features: [
+      "Tarihi Tuğla ve Horasan Harcı Restorasyonu",
+      "Brüt Beton ve Siyah Çelik Strüktürler",
+      "Yüksek Tavanlı Akustik Aydınlatma Çözümleri",
+      "Gizli Ev Sinema ve Ses Altyapısı",
+      "El Yapımı İtalyan Mutfak Tasarımı"
+    ]
+  },
+  {
     id: "as-tower",
     title: "As Tower Rezidans",
     category: "residential",
@@ -46,52 +115,6 @@ const PROJECTS_DATA = [
       "Isı Pompalı ve Çevre Dostu İklimlendirme",
       "Özel Sinema ve Fitness Odası",
       "Lamine Parke ve İthal Seramik Kaplamalar"
-    ]
-  },
-  {
-    id: "as-plazalar",
-    title: "As İş Merkezi & Plaza",
-    category: "commercial",
-    categoryTitle: "Ticari Proje",
-    location: "Söğütözü, Ankara",
-    year: "2024",
-    area: "28.000 m²",
-    description: "Modüler ofis sistemleri, yüksek teknoloji altyapısı ve konferans salonları ile Ankara'nın finans merkezinde yer alan prestijli A sınıfı iş merkezi. Şirketinizin vizyonunu yansıtacak modern ofis alanları.",
-    mainImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80"
-    ],
-    features: [
-      "LEED Gold Yeşil Bina Sertifikası",
-      "Yüksek Hızlı Fiber Optik İnternet Altyapısı",
-      "Kat Bahçeleri ve Ortak Sosyal Alanlar",
-      "Merkezi Isıtma, Soğutma ve Havalandırma (HVAC)",
-      "Kartlı Geçiş ve Gelişmiş Bina Yönetim Sistemi (BMS)"
-    ]
-  },
-  {
-    id: "as-loft-concept",
-    title: "As Loft İç Mimari",
-    category: "interior",
-    categoryTitle: "İç Mimari & Tasarım",
-    location: "Çankaya, Ankara",
-    year: "2025",
-    area: "420 m²",
-    description: "Endüstriyel tasarım unsurları ile modern konforun harmanlandığı, çift kat yüksekliğe sahip çatı katı loft daire projesi. Brüt beton, metal detaylar ve sıcak ahşap tonlarının eşsiz uyumu.",
-    mainImage: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80"
-    ],
-    features: [
-      "Özel Üretim Metal ve Ahşap Mobilyalar",
-      "Akıllı Aydınlatma Senaryoları",
-      "İthal Şömine ve Doğal Taş Duvar Kaplaması",
-      "Gizli İklimlendirme Kanalları",
-      "Minimalist Açık Mutfak Tasarımı"
     ]
   }
 ];
