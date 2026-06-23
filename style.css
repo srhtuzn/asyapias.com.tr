@@ -266,19 +266,13 @@ header.glass-header.compact .nav-container { height: 62px; }
   flex-shrink: 0;
 }
 .logo-img {
-  height: 46px;
+  height: 42px;
   width: auto;
   display: block;
-  border-radius: 5px;
-  padding: 4px 14px;
-  background: oklch(97% 0.004 85);
-  border: 1px solid oklch(75% 0.155 81 / 0.20);
-  box-shadow: 0 2px 14px oklch(75% 0.155 81 / 0.14), 0 0 0 0 oklch(75% 0.155 81 / 0);
-  transition: box-shadow 0.35s var(--ease-custom), border-color 0.35s;
+  transition: transform 0.35s var(--ease-custom);
 }
 .logo:hover .logo-img {
-  box-shadow: 0 4px 28px oklch(75% 0.155 81 / 0.32), 0 0 0 1px oklch(75% 0.155 81 / 0.15);
-  border-color: oklch(75% 0.155 81 / 0.50);
+  transform: scale(1.05);
 }
 
 .nav-menu { display: none; gap: 2.5rem; align-items: center; }
