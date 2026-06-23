@@ -269,7 +269,10 @@ header.glass-header.compact .nav-container { height: 62px; }
   height: 42px;
   width: auto;
   display: block;
-  transition: transform 0.35s var(--ease-custom);
+  transition: height 0.4s var(--ease-custom), transform 0.35s var(--ease-custom);
+}
+header.glass-header.compact .logo-img {
+  height: 34px;
 }
 .logo:hover .logo-img {
   transform: scale(1.05);
