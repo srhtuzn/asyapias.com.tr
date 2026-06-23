@@ -52,6 +52,16 @@ Uzun vadeli çözüm: logonun şeffaf arka planlı PNG versiyonunu kullan.
 
 ---
 
+## P7 — Hero bölümünde scroll takılması (pin süresi)
+
+**Belirti:** Ana sayfa açılışında aşağı kaydırınca sayfa belirli bir süre hareket etmiyor.
+
+**Kök neden:** ScrollTrigger `pin: true` + `end: "+=200%"` hero bölümünü 2 tam ekran yüksekliği boyunca sabit tutuyor. `scrub: 1.5` ise animasyona 1.5 sn gecikme ekliyor.
+
+**Çözüm:** `end: "+=80%"`, `scrub: 0.8` — animasyon daha hızlı tamamlanır. Hâlâ fazla hissedilirse `end: "+=50%"` ya da `pin: false`.
+
+---
+
 ## P4 — PowerShell'de git commit heredoc sözdizimi
 
 **Belirti:** `git commit -m "$(cat <<'EOF'...EOF)"` PowerShell'de `ParserError` verir.
