@@ -219,10 +219,10 @@ const PROJECTS_DATA = [
     area: "9.200 m²",
     description: "Belgrad Ormanı sınırında, doğanın kalbinde konumlandırılmış, brüt beton, masif ahşap ve temperli cam cepheli 8 adet ultra lüks müstakil orman evi projesi.",
     descriptionEn: "Located at the edge of the Belgrad Forest, in the heart of nature, 8 ultra-luxury detached forest villas featuring exposed concrete, solid wood, and tempered glass facades.",
-    mainImage: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+    mainImage: "https://images.unsplash.com/photo-1508333706533-1ab43ecb1606?auto=format&fit=crop&w=1200&q=80",
     images: [
-      "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1508333706533-1ab43ecb1606?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80"
     ],
     features: [
@@ -291,7 +291,7 @@ const PROJECTS_DATA = [
     images: [
       "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1542744094-3a31f103e35f?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
     ],
     features: [
       "Yüksek Tavan ve Özel Akustik Panel Askıları",
@@ -306,6 +306,74 @@ const PROJECTS_DATA = [
       "Concealed Cabling & Floor Duct Systems",
       "Customizable Dimmable Lighting",
       "Minimalist Industrial Furniture Designs"
+    ]
+  },
+  {
+    id: "as-ankara-skyline",
+    title: "AS Ankara Skyline Plaza",
+    titleEn: "AS Ankara Skyline Plaza",
+    category: "commercial",
+    categoryTitle: "Ticari Proje",
+    categoryTitleEn: "Commercial Project",
+    location: "Çankaya, Ankara",
+    locationEn: "Cankaya, Ankara",
+    year: "2026",
+    area: "24.500 m²",
+    description: "Ankara'nın iş merkezi kalbinde yükselen, çift cidarlı akıllı cam cepheli, sürdürülebilir enerji sistemlerine ve A+ ofis standartlarına sahip prestijli kule projesi.",
+    descriptionEn: "A prestigious tower project rising in the business heart of Ankara, featuring a double-skin smart glass facade, sustainable energy systems, and A+ office standards.",
+    mainImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80"
+    ],
+    features: [
+      "Çift Cidarlı Isı Kontrollü Akıllı Cephe",
+      "Güneş Panelleri ile Kendi Enerjisini Üreten Sistem",
+      "LEED Gold Sertifikalı Sürdürülebilir Mimari",
+      "Açık Teraslı ve Yeşil Alanlı Kat Bahçeleri",
+      "Merkezi Havalandırma ve Akıllı İklimlendirme"
+    ],
+    featuresEn: [
+      "Double-Skin Heat-Controlled Smart Facade",
+      "Self-Energy Generating System with Solar Panels",
+      "LEED Gold Certified Sustainable Architecture",
+      "Floor Gardens with Open Terraces and Green Areas",
+      "Central Ventilation and Smart Climate Control"
+    ]
+  },
+  {
+    id: "as-lara-cliffs",
+    title: "AS Lara Akdeniz Villaları",
+    titleEn: "AS Lara Mediterranean Villas",
+    category: "residential",
+    categoryTitle: "Konut Projesi",
+    categoryTitleEn: "Residential Project",
+    location: "Lara, Antalya",
+    locationEn: "Lara, Antalya",
+    year: "2026",
+    area: "12.800 m²",
+    description: "Antalya Lara kıyılarında, falezlerin üzerinde konumlanan, panoramik Akdeniz manzaralı, geniş sonsuzluk havuzlarına ve akıllı ev otomasyonuna sahip 6 adet ultra lüks konut projesi.",
+    descriptionEn: "6 ultra-luxury residential villas situated on the cliffs of Antalya Lara, offering panoramic Mediterranean views, large infinity pools, and smart home automation.",
+    mainImage: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1200&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+    ],
+    features: [
+      "Panoramik Falez ve Akdeniz Manzarası",
+      "Sonsuzluk Havuzu ve Isıtmalı Jakuzi Alanı",
+      "Güneş Kırıcı Akıllı Hareketli Paneller",
+      "Akıllı Ev Otomasyonu ve İklim Kontrolü",
+      "Doğal Taş ve Tik Ağacı Malzeme Seçimi"
+    ],
+    featuresEn: [
+      "Panoramic Cliff and Mediterranean View",
+      "Infinity Pool and Heated Jacuzzi Area",
+      "Smart Movable Sunshade Panels",
+      "Smart Home Automation & Climate Control",
+      "Natural Stone and Teak Wood Material Selection"
     ]
   }
 ];
