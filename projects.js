@@ -120,7 +120,7 @@ const PROJECTS_DATA = [
     mainImage: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
     images: [
       "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
     ],
     features: [
@@ -219,11 +219,11 @@ const PROJECTS_DATA = [
     area: "9.200 m²",
     description: "Belgrad Ormanı sınırında, doğanın kalbinde konumlandırılmış, brüt beton, masif ahşap ve temperli cam cepheli 8 adet ultra lüks müstakil orman evi projesi.",
     descriptionEn: "Located at the edge of the Belgrad Forest, in the heart of nature, 8 ultra-luxury detached forest villas featuring exposed concrete, solid wood, and tempered glass facades.",
-    mainImage: "https://images.unsplash.com/photo-1508333706533-1ab43ecb1606?auto=format&fit=crop&w=1200&q=80",
+    mainImage: "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&w=1200&q=80",
     images: [
-      "https://images.unsplash.com/photo-1508333706533-1ab43ecb1606?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80"
     ],
     features: [
       "Masif Ahşap ve Doğal Taş Dış Cephe Kaplamaları",
@@ -321,10 +321,10 @@ const PROJECTS_DATA = [
     area: "24.500 m²",
     description: "Ankara'nın iş merkezi kalbinde yükselen, çift cidarlı akıllı cam cepheli, sürdürülebilir enerji sistemlerine ve A+ ofis standartlarına sahip prestijli kule projesi.",
     descriptionEn: "A prestigious tower project rising in the business heart of Ankara, featuring a double-skin smart glass facade, sustainable energy systems, and A+ office standards.",
-    mainImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+    mainImage: "https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&w=1200&q=80",
     images: [
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1504297050568-910d24c426d3?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80"
     ],
     features: [
@@ -355,11 +355,11 @@ const PROJECTS_DATA = [
     area: "12.800 m²",
     description: "Antalya Lara kıyılarında, falezlerin üzerinde konumlanan, panoramik Akdeniz manzaralı, geniş sonsuzluk havuzlarına ve akıllı ev otomasyonuna sahip 6 adet ultra lüks konut projesi.",
     descriptionEn: "6 ultra-luxury residential villas situated on the cliffs of Antalya Lara, offering panoramic Mediterranean views, large infinity pools, and smart home automation.",
-    mainImage: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1200&q=80",
+    mainImage: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80",
     images: [
-      "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
     ],
     features: [
       "Panoramik Falez ve Akdeniz Manzarası",
