@@ -116,6 +116,98 @@ const PROJECTS_DATA = [
       "Özel Sinema ve Fitness Odası",
       "Lamine Parke ve İthal Seramik Kaplamalar"
     ]
+  },
+  {
+    id: "as-vadisi-villas",
+    title: "As Vadisi Konutları",
+    category: "residential",
+    categoryTitle: "Konut Projesi",
+    location: "Çankaya, Ankara",
+    year: "2025",
+    area: "35.000 m²",
+    description: "Ankara'nın vadi manzarasına hakim, sürdürülebilir mimarinin ön planda olduğu, geniş yeşil alanlara ve güneş paneli kiremitlerine sahip yeni nesil lüks daire kompleksi projesi.",
+    mainImage: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80"
+    ],
+    features: [
+      "Fotovoltaik Güneş Enerjili Çatı Kiremitleri",
+      "Geniş Vadi Manzaralı Koşu ve Rekreasyon Alanı",
+      "Gri Su Arıtma ve Geri Kazanım Altyapısı",
+      "Dikey Orman Bitkilendirmeli Kat Balkonları",
+      "7/24 Kesintisiz Güç ve Jeneratör Yedeklemesi"
+    ]
+  },
+  {
+    id: "as-gokturk-houses",
+    title: "As Göktürk Orman Evleri",
+    category: "residential",
+    categoryTitle: "Konut Projesi",
+    location: "Göktürk, İstanbul",
+    year: "2026",
+    area: "9.200 m²",
+    description: "Belgrad Ormanı sınırında, doğanın kalbinde konumlandırılmış, brüt beton, masif ahşap ve temperli cam cepheli 8 adet ultra lüks müstakil orman evi projesi.",
+    mainImage: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80"
+    ],
+    features: [
+      "Masif Ahşap ve Doğal Taş Dış Cephe Kaplamaları",
+      "Akıllı Yağmur Suyu Toplama Deposu ve Bahçe Sulama",
+      "Jeotermal Isı Pompası ile Düşük Enerji Tüketimi",
+      "Müstakil Isıtmalı Havuz ve Geniş Deck Teraslar",
+      "Özel Güvenlik ve Çevre Çit Koruma Sistemleri"
+    ]
+  },
+  {
+    id: "as-modular-maslak",
+    title: "As Modüler Maslak",
+    category: "commercial",
+    categoryTitle: "Ticari Proje",
+    location: "Maslak, İstanbul",
+    year: "2026",
+    area: "42.000 m²",
+    description: "Maslak finans bölgesinde yükselen, esnek ve modüler kat planlarına sahip, HEPA filtreli taze hava iklimlendirmeli ve akıllı cam cepheli yeni nesil yeşil ofis kulesi projesi.",
+    mainImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80"
+    ],
+    features: [
+      "Birleştirilebilir ve Modüler Ofis Alanları",
+      "Güneş Isısı Kırıcı Akıllı Cam Giydirme Cephe",
+      "Kat Terasları ve Sosyal Ortak Alanlar",
+      "HEPA Filtreli Havalandırma (HVAC)",
+      "Bina Yönetim Otomasyonu (BMS)"
+    ]
+  },
+  {
+    id: "as-kadikoy-office",
+    title: "As Kadıköy Kreatif Ofis",
+    category: "interior",
+    categoryTitle: "İç Mimari & Tasarım",
+    location: "Kadıköy, İstanbul",
+    year: "2025",
+    area: "480 m²",
+    description: "Kadıköy'de eski bir antreponun, yüksek tavanlı, brüt beton zeminli, açık çalışma alanları ve ses yalıtımlı toplantı kapsülleri sunan modern bir kreatif ajans ofisine dönüştürülmesi projesi.",
+    mainImage: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1542744094-3a31f103e35f?auto=format&fit=crop&w=800&q=80"
+    ],
+    features: [
+      "Yüksek Tavan ve Özel Akustik Panel Askıları",
+      "Ses Yalıtımlı Mobil Toplantı Kapsülleri",
+      "Gizli Kablolama ve Zemin Kanal Sistemleri",
+      "Kişiselleştirilebilir Dimlenebilir Aydınlatma",
+      "Minimalist Endüstriyel Mobilya Tasarımları"
+    ]
   }
 ];
 
